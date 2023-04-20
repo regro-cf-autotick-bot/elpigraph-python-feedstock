@@ -1,5 +1,5 @@
 {% set name = "elpigraph-python" %}
-{% set version = "0.1.1" %}
+{% set version = "0.3.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a9b054201c9557c9a5c12db2218ea8948f0f3575af783b65ac9c054457e6875a
+  sha256: 875ac455f9c79fb9d91f1b9bfa19c4ce8c9ee4e0a3535f5c6073830732bb55ff
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - scipy >=1.2.0
     - python-igraph >=0.7.1
     - matplotlib-base
-
+    - shapely
 
 test:
   imports:
